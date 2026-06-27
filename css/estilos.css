@@ -1,0 +1,174 @@
+/* --- Estilos Generales y Reseteo --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333333;
+    background-color: #FAFAFA;
+    line-height: 1.6;
+}
+
+/* --- Menú de Navegación Global --- */
+nav {
+    background-color: #102542; /* Color principal solicitado */
+    padding: 15px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F4D35E;
+}
+
+/* Indicador de ubicación actual */
+nav ul li a.activo {
+    font-weight: bold;
+    border-bottom: 2px solid #FFFFFF;
+    padding-bottom: 5px;
+}
+
+/* --- Estilos de la Pantalla de Inicio --- */
+.hero-section {
+    background-color: #102542;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 1px solid #1A365D;
+}
+
+.hero-section h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.hero-section .subtitle {
+    margin: 10px 0 0 0;
+    font-size: 1.2rem;
+    color: #E0E6ED;
+}
+
+.contenedor-inicio {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.introduccion, .destacado {
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.introduccion h2, .destacado h2 {
+    color: #102542;
+    margin-top: 0;
+}
+
+.cta-container {
+    margin-top: 25px;
+}
+
+.boton-accion {
+    display: inline-block;
+    background-color: #102542;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton-accion:hover {
+    background-color: #1A365D;
+}
+
+/* --- Estilos de la Sección Tabla --- */
+.contenedor-tabla {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contenedor-tabla h1 {
+    color: #102542;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+caption {
+    padding: 12px;
+    font-style: italic;
+    text-align: left;
+    color: #555555;
+}
+
+/* Aplicación del color requerido en el encabezado */
+th {
+    background-color: #102542;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    border: 1px solid #0D1F38;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #E2E8F0;
+}
+
+/* Estilo para destacar la celda con rowspan */
+.columna-fija {
+    font-weight: bold;
+    background-color: #F8FAFC;
+    color: #102542;
+}
+
+/* Efecto Cebra alternando filas de datos */
+tbody tr:nth-child(even) {
+    background-color: #F8FAFC;
+}
+
+/* Resaltado interactivo al pasar el mouse */
+tbody tr:hover {
+    background-color: #EDF2F7;
+}
+
+/* Estilo de cierre de tabla */
+tfoot {
+    font-weight: bold;
+    background-color: #E2E8F0;
+    color: #102542;
+}
+
+tfoot td {
+    border-top: 2px solid #102542;
+}
